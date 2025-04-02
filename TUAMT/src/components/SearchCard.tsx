@@ -1,13 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { useFetchMeasureListQuery, useFetchConversionQuery, changeInput, changeOutput, changeValue } from "../store";
 import { RootState } from "../store/apis/measureApi";
 
 function SearchCard() {
     const {data, error, isFetching } = useFetchMeasureListQuery('length');
-    //const [inputMeasure, setInputMeasure] = useState<string>()
-    //const [outputMeasure, setOutputMeasure] = useState<string>()
-    //const [measureValue, setMeasureValue] = useState<number>(0)
+
 
     let content;
     if (isFetching) {

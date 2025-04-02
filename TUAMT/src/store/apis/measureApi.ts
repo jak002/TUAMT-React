@@ -1,5 +1,5 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
-import { MeasurementResult, Measure, ConvertTerms} from "../../types/result";
+import { MeasurementResult, ConvertTerms} from "../../types/result";
 import { store } from '..';
 
 const measureApi = createApi({
