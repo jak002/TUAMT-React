@@ -1,6 +1,6 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import { MeasurementResult, Measure, ConvertTerms} from "../../types/result";
-//import { store } from '..';
+import { store } from '..';
 
 const measureApi = createApi({
     reducerPath: 'convert',
@@ -36,3 +36,4 @@ const measureApi = createApi({
 
 export const { useFetchMeasureListQuery, useFetchConversionQuery } = measureApi;
 export {measureApi};
+export type RootState = ReturnType<typeof store.getState>
