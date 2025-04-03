@@ -51,7 +51,6 @@ function InputCard() {
     return (
         <div>
             <h2>Options:</h2>
-            <form>
             <select value={inputMeasure} onChange={handleInputChange}>
                 <option key='' value=''>Choose input type...</option>
                 {content}
@@ -61,10 +60,6 @@ function InputCard() {
             <option key='' value=''>Choose output type...</option>
                 {content}
             </select>
-            <h2>{inputMeasure}</h2>
-            <h2>{outputMeasure}</h2>
-            <h2>{measureValue}</h2>
-            </form>
         </div>
     )
 }

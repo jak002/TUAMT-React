@@ -46,12 +46,12 @@ function ResultCard() {
             inputName = data?.inputMeasure.namePlural;
             isOrAre = 'are';
         }
-        if (data?.amount! < 2 && data?.amount! > 0.99) {
+        if (Math.round(data?.amount!) === 1 && Math.floor(data?.amount!) === 1) {
             outputName = data?.outputMeasure.name
         } else {
             outputName = data?.outputMeasure.namePlural
         }
-        content = <p>{amountToConvert} {inputName} {isOrAre} approximately {data?.amount.toFixed(1)} {outputName}</p>
+        content = <p>{amountToConvert} {inputName} {isOrAre} approximately the {data?.inputMeasure.type} of {data?.amount.toFixed(1)} {outputName}</p>
     }
 
     //if(inputFilled) {

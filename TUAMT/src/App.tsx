@@ -9,8 +9,8 @@ function App() {
   return (
     <>
       <nav>
-        <Link to='/'>TUAMT</Link>
-        <Link to='/about'>About</Link>
+        <Link to='/'> TUAMT </Link>
+        <Link to='/about'> About </Link>
       </nav>
       <Routes>
         <Route path='/' element={<Home/>}/>
