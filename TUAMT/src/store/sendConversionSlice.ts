@@ -5,7 +5,7 @@ const sendConversionSlice = createSlice({
     initialState: {
         input: '',
         output: '',
-        value: 1
+        value: 0
     },
     reducers:{
         changeInput(state, action){

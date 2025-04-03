@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { useFetchMeasureListQuery, useFetchConversionQuery, changeInput, changeOutput, changeValue } from "../store";
 import { RootState } from "../store/apis/measureApi";
 
-function SearchCard() {
+function InputCard() {
     const {data, error, isFetching } = useFetchMeasureListQuery('length');
 
 
@@ -69,4 +69,4 @@ function SearchCard() {
     )
 }
 
-export default SearchCard;
+export default InputCard;
