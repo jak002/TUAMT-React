@@ -1,4 +1,3 @@
-import React from "react";
 import { useSelector } from "react-redux";
 import { useFetchConversionQuery } from "../store";
 import { RootState } from "../store/apis/measureApi";

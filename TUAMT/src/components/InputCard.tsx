@@ -1,6 +1,5 @@
-import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { useFetchMeasureListQuery, useFetchConversionQuery, changeInput, changeOutput, changeValue } from "../store";
+import { useFetchMeasureListQuery, changeInput, changeOutput, changeValue } from "../store";
 import { RootState } from "../store/apis/measureApi";
 
 function InputCard() {

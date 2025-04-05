@@ -1,4 +1,3 @@
-import React from "react";
 import InputCard from "./InputCard";
 import ResultCard from "./ResultCard";
 
