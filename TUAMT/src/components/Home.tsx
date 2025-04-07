@@ -22,9 +22,16 @@ function Home()  {
 
     const chosenUndertitle = undertitles[randomizer]
 
+    const kaboomgifs = [...Array(12).keys()].map(i => <img key={i} src="../src/assets/ezgif-4b2535dfa77997.gif"/>)
+
     return(
     <div>
         <h1>The Ultimate American Measurement Tool</h1>
+        <img src="../src/assets/eagleUSAnew.png" width={300} />
+        <br/>
+        <div>
+        {kaboomgifs}
+        </div>
         <h3>{chosenUndertitle}</h3>
         <InputCard/>
         <hr/>

@@ -54,7 +54,7 @@ function InputCard() {
                 <option key='' value=''>Choose input type...</option>
                 {content}
             </select>
-            <input type="number" value={measureValue} onChange={handleValueChange}></input>
+            <input type="number" value={measureValue} onChange={handleValueChange} width={1}></input>
             <select value={outputMeasure} onChange={handleOutputChange}>
             <option key='' value=''>Choose output type...</option>
                 {content}

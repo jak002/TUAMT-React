@@ -15,6 +15,9 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/about' element={<About/>}/>
       </Routes>
+      <footer>
+      <a href="https://www.vecteezy.com/free-vector/ak-47">Ak 47 Vectors by Vecteezy</a>
+      </footer>
     </>
   )
 }
