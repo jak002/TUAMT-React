@@ -5,7 +5,7 @@ import { store } from '..';
 const measureApi = createApi({
     reducerPath: 'convert',
     baseQuery: fetchBaseQuery({
-        baseUrl: 'http://localhost:5076/api/Measurements/'
+        baseUrl: 'https://wtfiakapi.mewnlightro.se/api/Measurements/'
     }),
     endpoints(builder) {
         return {

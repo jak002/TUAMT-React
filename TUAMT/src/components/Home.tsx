@@ -1,5 +1,7 @@
 import InputCard from "./InputCard";
 import ResultCard from "./ResultCard";
+import imgUrl1 from '../assets/eagleUSAnew.png'
+import imgUrl2 from '../assets/ezgif-4b2535dfa77997.gif'
 
 function Home()  {
 
@@ -22,19 +24,19 @@ function Home()  {
 
     const chosenUndertitle = undertitles[randomizer]
 
-    const kaboomgifs = [...Array(12).keys()].map(i => <img key={i} src="../src/assets/ezgif-4b2535dfa77997.gif"/>)
+    const kaboomgifs = [...Array(12).keys()].map(i => <img key={i} src={imgUrl2} className=" min-h-0"/>)
 
     return(
-    <div className="flex flex-col justify-center justify-items-center text-center bg-white p-8 rounded-2xl shadow-2xl">
+    <div className="flex flex-col justify-center justify-items-center text-center max-w-4xl bg-white pt-2 p-5 rounded-2xl shadow-2xl">
         <h1>The Ultimate American Measurement Tool</h1>
-        <img src="../src/assets/eagleUSAnew.png" width={300} className="flex justify-center m-auto" />
+        <p className=" italic text-sm font-light">v. 1.0</p>
+        <img src={imgUrl1} className="flex justify-center m-auto max-w-72" />
         <br/>
-        <div className="flex justify-center m-auto">
+        <div className="flex justify-center m-auto shrink">
         {kaboomgifs}
         </div>
         <h3>{chosenUndertitle}</h3>
         <InputCard/>
-        <hr/>
         <ResultCard/>
     </div>
     )

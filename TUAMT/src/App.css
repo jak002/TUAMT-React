@@ -4,16 +4,16 @@
 
  @layer base {
   h1 {
-    @apply text-4xl font-bold;
+    @apply text-4xl font-black;
   }
   h2 {
     @apply text-xl font-bold;
   }
   h3 {
-    @apply text-lg
+    @apply text-lg font-bold
   }
   a {
-    @apply underline hover:text-blue-300
+    @apply hover:text-blue-300
   }
 } 
 

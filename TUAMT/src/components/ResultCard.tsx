@@ -50,7 +50,7 @@ function ResultCard() {
         } else {
             outputName = data?.outputMeasure.namePlural
         }
-        content = <h2>{amountToConvert} {inputName} {isOrAre} approximately the {data?.inputMeasure.type} of {data?.amount} {outputName}</h2>
+        content = <div><h2>Output:</h2><h2 className=" bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">{amountToConvert} {inputName} {isOrAre} approximately the {data?.inputMeasure.type} of {data?.amount} {outputName}</h2></div>
     }
 
     //if(inputFilled) {
@@ -61,10 +61,9 @@ function ResultCard() {
 return (
 
     <>
-    <div>
-        <h2>Output:</h2>
+    
         {content}
-    </div>
+    
     </>
 
 )

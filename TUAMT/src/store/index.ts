@@ -13,7 +13,6 @@ export const store = configureStore({
         .concat(measureApi.middleware)
     },
 });
-console.log(store.getState());
 setupListeners(store.dispatch);
 
 export {useFetchMeasureListQuery, useFetchConversionQuery } from "./apis/measureApi"
