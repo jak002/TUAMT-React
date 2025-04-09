@@ -49,7 +49,7 @@ function InputCard() {
 
     return (
         <div>
-            <h2>Options:</h2>
+            <h2>Input:</h2>
             <select value={inputMeasure} onChange={handleInputChange}>
                 <option key='' value=''>Choose input type...</option>
                 {content}

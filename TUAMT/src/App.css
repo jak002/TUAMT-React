@@ -1,4 +1,23 @@
-#root {
+@import "tailwindcss";
+
+@tailwind base;
+
+ @layer base {
+  h1 {
+    @apply text-2xl font-bold;
+  }
+  h2 {
+    @apply text-xl font-bold;
+  }
+  h3 {
+    @apply text-lg
+  }
+  a {
+    @apply underline hover:text-blue-300
+  }
+} 
+
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -39,4 +58,4 @@
 
 .read-the-docs {
   color: #888;
-}
+} */

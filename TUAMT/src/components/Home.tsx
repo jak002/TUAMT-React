@@ -25,11 +25,11 @@ function Home()  {
     const kaboomgifs = [...Array(12).keys()].map(i => <img key={i} src="../src/assets/ezgif-4b2535dfa77997.gif"/>)
 
     return(
-    <div>
+    <div className="flex flex-col justify-center justify-items-center text-center bg-white p-8 rounded-2xl shadow-2xl">
         <h1>The Ultimate American Measurement Tool</h1>
-        <img src="../src/assets/eagleUSAnew.png" width={300} />
+        <img src="../src/assets/eagleUSAnew.png" width={300} className="flex justify-center m-auto" />
         <br/>
-        <div>
+        <div className="flex justify-center m-auto">
         {kaboomgifs}
         </div>
         <h3>{chosenUndertitle}</h3>
