@@ -15,7 +15,7 @@ function App() {
         <Link to='/about'> About </Link>
       </nav>
       </header>
-      <div className="py-14 max-w-4xl mx-auto">
+      <div className="py-14 max-w-4xl mx-3">
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/about' element={<About/>}/>
