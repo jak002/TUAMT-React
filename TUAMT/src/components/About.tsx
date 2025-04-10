@@ -1,6 +1,6 @@
 import ImageCard from "./ImageCard"
 import imgUrl1 from '../assets/boulder.png'
-import imgDog from '../assets/dog.webp'
+import imgDog from '../assets/dog.png'
 import imgswift from '../assets/tswift.png'
 import imgwmach from '../assets/wmach.png'
 

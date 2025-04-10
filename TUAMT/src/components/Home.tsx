@@ -29,7 +29,7 @@ function Home()  {
     return(
     <div className="flex flex-col justify-center justify-items-center text-center max-w-4xl bg-white pt-2 p-5 rounded-2xl shadow-2xl">
         <h1>The Ultimate American Measurement Tool</h1>
-        <p className=" italic text-sm font-light">v. 1.0</p>
+        <p className=" italic text-sm font-light">v. 1.0.1</p>
         <img src={imgUrl1} className="flex justify-center m-auto max-w-72" />
         <br/>
         <div className="flex justify-center m-auto shrink">
